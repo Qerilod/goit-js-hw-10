@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Page 2</title>
   </head>
-  <body>
+  <body class="container">
     <section>
-      <a href="./index.html">Go to home</a>
+      <a class="home" href="./index.html">Go to home</a>
     </section>
     <input class="imput-timer" type="text" id="datetime-picker" />
-    <button class="btn-timer" type="button" data-start>Start</button>
+    <button disabled class="btn-timer" type="button" data-start>Start</button>
 
     <div class="timer">
       <div class="field">
         <span class="value" data-days>00</span>
-        <span class="label">Days</span>
+        <span class="label">DAYS</span>
       </div>
       <div class="field">
         <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
+        <span class="label">HOURS</span>
       </div>
       <div class="field">
         <span class="value" data-minutes>00</span>
-        <span class="label">Minutes</span>
+        <span class="label">MINUTES</span>
       </div>
       <div class="field">
         <span class="value" data-seconds>00</span>
-        <span class="label">Seconds</span>
+        <span class="label">SECONDS</span>
       </div>
     </div>
     <script type="module" src="./js/1-timer.js"></script>
