@@ -42,7 +42,9 @@ function convertMs(ms) {
 
   return { days, hours, minutes, seconds };
 }
-
+function addLeadingZero(value) {
+  return value < 10 ? '0' + value : value;
+}
 const dayTimer = document.querySelector('[data-days]');
 const hourTimer = document.querySelector('[data-hours]');
 const minTimer = document.querySelector('[data-minutes]');
@@ -58,9 +60,6 @@ startButton.addEventListener('click', () => {
   const currentDate = new Date();
   const selectedDate = userSelectedDate;
   const interval = setInterval(() => {
-    function addLeadingZero(value) {
-      return value < 10 ? '0' + value : value;
-    }
     const diff = selectedDate - currentDate;
 
     const timer = convertMs(diff);

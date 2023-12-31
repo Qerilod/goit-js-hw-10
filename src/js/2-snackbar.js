@@ -38,5 +38,5 @@ form.addEventListener('submit', function (event) {
       });
     }
   );
-  delayInput.value = '';
+  event.currentTarget.reset();
 });
